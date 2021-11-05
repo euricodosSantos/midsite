@@ -43,7 +43,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+
 }
 
 p{
@@ -58,7 +58,7 @@ body{
 header{
     background-image:linear-gradient(to bottom,var(--cor0),var(--cor1));
     min-width:300px ;
-    max-width: 75%;
+    max-width: 100%;
     overflow: hidden;   
 }
 
