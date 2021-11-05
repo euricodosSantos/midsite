@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fontelogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+    font-weight: normal;
+}
+@keyframes changeimg{
+    15%{
+        background: url(../imagens/thumb-hardware.png)no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        overflow:hidden ;
+     
+    }
+    25%{
+        background: url(../imagens/thumb-js.png) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    50%{
+        background: url(../imagens/thumb-python.png) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }100%{
+        background: url(../imagens/thumb-js.png)no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+}
+
+:root{
+    
+   --cor0:#81C7E9;
+    --cor1:#1685bd;
+   --cor2:#226484;
+   --cor3:#0e4966;
+   --cor4:#053349;
+   --cor5:#ffffff;
+   --font-padrao:Arial, Verdana, Helvetica, sans-serif; 
+   --font-logo:'fontelogo'
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-indent: 10px;
+}
+body{
+    background:url(../imagens/hardware.png)no-repeat;
+    background-size: cover;
+    font-family: var(--font-padrao);
+}
+
+header{
+    background-image:linear-gradient(to bottom,var(--cor0),var(--cor1));
+    min-width:320px ;
+    max-width: 100%;
+    overflow: hidden;   
+}
+
+img.logo{
+    max-width: 20%;
+    height: auto;
+    display: block;
+    padding: 0px;
+    margin: auto;    
+}
+
+header > p{
+    text-align:left;
+  color: white;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.445);
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+nav{ 
+    top: -20px;
+    float:right;
+    display: inline-block;
+    padding: 5px 15px ;
+    position: relative;
+    margin-right: 10px;
+
+}
+
+nav > a {
+    font-family: var(--font-logo);
+    text-decoration: none;
+    color:var(--cor4);
+    padding-right: 2px;
+}
+
+nav >a:hover{
+    background-color: var(--cor4);
+    padding:8px ;
+    text-decoration: underline;
+    border-radius: 5px;
+    color: var(--cor5);
+    transition: 1s;
+  
+
+}
+
+main{
+    background-color: white;
+    max-width: 50%;
+    min-width: 320px;
+  margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius: 10px;
+    margin-bottom:30px ;
+}
+
+section{
+    padding: 20px;
+}
+
+section> article >p {
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 1.8em;
+
+}
+
+section > article > h2{
+    font-size: 1.8em;
+   font-family: var(--font-logo);
+   border-bottom: solid rgba(0, 0, 0, 0.418);
+    color:var(--cor1);    
+    margin: -20px -18px 0px -18px;
+    padding: 5px;
+    padding-left: 20px;
+    margin-bottom: 15px; 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.123);
+}
+article > h4{
+    font-family: var(--font-logo);
+    color: var(--cor1);
+    margin-bottom: 10px;
+}
+article ul.encontre {
+   
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    background-color: var(--cor5);
+   max-width: 60%;
+   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.171);
+   min-width:295px ;
+   margin: auto;
+    padding: 10px;
+    columns: 2;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+     
+   
+
+}
+article ul.encontre > li{
+    color: var(--cor3);
+    font-weight: bold;
+    line-height: 2em;
+}
+
+
+.imagem{
+  
+   background: url(../imagens/thumb-html.png) no-repeat;
+  max-width: 100%;
+  min-width: 40%;
+  margin: auto;
+   background-size: cover;
+   overflow: hidden;
+   max-height: 400px;
+   min-height: auto;
+   animation-name: changeimg;
+   animation-duration: 10s;
+   animation-fill-mode: forwards;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+}
+
+.imagem:hover{
+    height: 500px;
+    transition: 1s;
+    border: solid rgba(0, 0, 0, 0.329);
+ 
+}
+
+.imagem h3{
+    padding: 40px;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+}
+
+
+
+.imagem > a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    position: relative;
+    top: 200px;
+    text-align: center;
+
+ 
+   }
+
+.imagem >a:hover{
+     text-decoration: underline;
+ }  
+ a.externo::after{
+    content:'\1F517\00A0';
+}
+
+
+
+
+aside.lateral > p{
+
+    position: relative;
+    text-align: justify;
+    text-indent:10px ;
+ 
+
+}
+main>section h3{
+     font-family: var(--font-logo);
+     margin-top: 10px;
+    color: var(--cor2);
+     font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: solid rgba(0, 0, 0, 0.089);   
+}    
+aside li{
+    font-size: 0.9em;
+    padding: 6px;
+}
+aside.referencias{
+     display: flex;
+     flex-direction:column;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-content: space-around;
+     
+    background: url('../imagens/contato.png') no-repeat right ;
+    padding: 60px;
+     background-color: var(--cor1);
+     color: white;
+     margin: -10px -20px 0px -20px;
+    /* border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;*/
+     margin-bottom: -50px;
+   
+     
+ }
+ figure {
+    display: block;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.514);
+    width: 100%;
+    margin: auto;
+    color:white;
+    font-weight: bold;
+}
+figure:hover{
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+figure img{
+    width: 100%;
+}
+
+
+figcaption ul {
+     list-style: inside;
+ } 
+figcaption p {
+    font-family: var(--font-logo);
+    color: black;
+}
+ aside.referencias >h3{
+     margin: -20px -10px 0px -20px;
+ }
+ aside.referencias   a {
+     text-decoration: none;
+     color: white;
+     font-weight:bold;
+     
+ }
+
+aside.referencias>h4{
+    padding: 10px;
+
+}
+
+footer{
+    background-color: var(--cor4);
+    padding: 10px;
+}
+footer P{
+     color:white;
+     text-align: center;
+    font-style: italic;
+}
+/*pagina2 */
+div ul > li{
+    text-indent: 20px;
+ list-style-type:none;   
+
+}
+div ul > li > a{
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 30px;
+    color: var(--cor1);
+}
+div ul> li >a:hover{
+    text-decoration: underline;
+
+}
+aside.nota{
+    max-width: 70%;
+    text-align: justify;
+    margin: 10px;
+    
+}
+.nota > h5 {
+    margin-bottom: 8px;
+    font-weight: bold;
+    
+
+}
+.nota > p{
+    line-height:1.5em;
+    margin-left: 10px;
+}
+/* pagina3*/
+div.python {
+    width: 50%;
+    margin: 20px;
+    
+} 
+.python h3{
+    color:black;
+    font-size: 1em;
+}
+
+/*teste */
+
+iframe{
+    width: 100%;
+    height: 500px;
+}
